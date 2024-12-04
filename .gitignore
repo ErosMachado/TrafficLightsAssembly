@@ -1,0 +1,39 @@
+# Ignorar arquivos de backup comuns
+*.bak
+*.tmp
+*.swp
+
+# Ignorar arquivos do Proteus
+*.dsn
+*.lix
+*.pd*  # Ignora arquivos do Proteus Design (pdsprj, pdx etc.)
+*.emf
+*.cfg
+*.bak
+*.log
+
+# Ignorar arquivos gerados pelo compilador
+*.lst
+*.hex
+*.obj
+*.map
+
+# Ignorar arquivos do EdSim51
+*.log
+*.trc
+*.epr
+*.cfg
+
+# Ignorar arquivos de build ou dependências específicas
+/build/
+*.o
+*.asm~
+*.temp
+
+# Ignorar IDEs ou editores de texto específicos
+.idea/
+*.vscode/
+*.DS_Store
+
+# Ignorar arquivos do sistema operacional
+Thumbs.db
