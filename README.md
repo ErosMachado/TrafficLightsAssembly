@@ -1,16 +1,48 @@
-# traffic lights Assembly
+# Projeto de Semáforo em Assembly
 
-traffic lights function for assembly-based microcontrollers.
+Este projeto simula um sistema de semáforos utilizando o microcontrolador 8051. Foi desenvolvido com o **EdSim51** para programação e teste em Assembly e simulado com o **Proteus** para verificar a interação dos componentes e interrupções externas. 
 
-Using the traffic light control program and external interrupts. Use two buttons connected to pins INT0 and INT1 to simulate pedestrian buttons on a traffic light. When the INT0 button is pressed, make the pedestrian light change to green and the vehicle light to red. When the INT1 button is pressed, make the pedestrian light return to red.
+## Descrição do Projeto
 
-# Semáforo em Assembly
+O sistema controla os semáforos de veículos e pedestres em um cruzamento. Dois botões conectados às interrupções externas (**INT0** e **INT1**) simulam os botões de pedestres:
 
-função de semáforos para microcontroladores baseados em montagem.
+- **INT0**: Ativa o semáforo de pedestres, mudando para **verde**, enquanto o semáforo de veículos muda para **vermelho**.
+- **INT1**: Retorna o semáforo de pedestres para **vermelho** e restaura o semáforo de veículos para sua sequência normal.
 
-Usando o programa de controle de semáforos e interrupções externas. Use dois botões conectados aos pinos INT0 e INT1 para simular botões de pedestres em um semáforo. Quando o botão INT0 é pressionado, faz a luz de pedestres mudar para verde e a luz do veículo para vermelha. Quando o botão INT1 é pressionado, faz a luz de pedestres retornar para vermelha.
+O sistema inclui:
+- Temporização com diferentes delays.
+- Transição automática entre os estados.
+- Modo de alerta (luzes amarelas piscando) ativado por **SW1**.
 
+## Imagem do Circuito
 
-# Circuit - Proteus:
+![Diagrama do Circuito](image.png)
 
-![image](https://github.com/user-attachments/assets/e6b01004-b021-434e-884b-2fc65b9d36c5)
+---
+
+# Traffic Light Project in Assembly
+
+This project simulates a traffic light system using the 8051 microcontroller. It was developed with **EdSim51** for Assembly programming and testing, and simulated with **Proteus** to validate the components and external interrupts' interaction. 
+
+## Project Description
+
+The system controls vehicle and pedestrian traffic lights at an intersection. Two buttons connected to external interrupts (**INT0** and **INT1**) simulate pedestrian buttons:
+
+- **INT0**: Activates the pedestrian light, turning it **green**, while the vehicle light turns **red**.
+- **INT1**: Returns the pedestrian light to **red** and restores the vehicle light to its normal sequence.
+
+The system includes:
+- Timing with various delays.
+- Automatic transition between states.
+- Alert mode (flashing yellow lights) activated by **SW1**.
+
+## Circuit Diagram
+
+![Circuit Diagram](image.png)
+
+---
+
+## Links úteis
+
+1. Documentação do EdSim51: [Link](http://www.edsim51.com/)
+2. Download do Proteus: [Link](https://www.labcenter.com/)
