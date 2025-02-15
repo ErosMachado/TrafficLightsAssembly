@@ -16,7 +16,8 @@ O sistema inclui:
 
 ## Imagem do Circuito
 
-![Diagrama do Circuito](image.png)
+![proteus_img](https://github.com/user-attachments/assets/56950af6-ce28-4a5b-96f4-0788cfc66f06)
+
 
 ---
 
@@ -35,10 +36,6 @@ The system includes:
 - Timing with various delays.
 - Automatic transition between states.
 - Alert mode (flashing yellow lights) activated by **SW1**.
-
-## Circuit Diagram
-
-![Circuit Diagram](image.png)
 
 ---
 
